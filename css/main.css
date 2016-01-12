@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+html { font-size: 62.5%; height: 100%; -webkit-text-size-adjust: 100%; }
+body { min-height: 100%; }
+
+
+/* Clearfix */
+.cf:before,
+.cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; }
+
+
+/* Responsive */
+*, *:after, *:before { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+[class*='c-'] { float: left; padding: 10px; }
+[class*='c-']:last-of-type, .l-c { padding-right: 10px; float: right; }
+
+.c-1 { width: 100%; }
+.c-2 { width: 50%; }
+.c-3 { width: 33.33%; }
+.c-4 { width: 25%; }
+.c-5 { width: 20%; }
+.c-6 { width: 16.6666666667%; }
+.c-7 { width: 14.2857142857%; }
+.c-8 { width: 12.5%; }
+.c-9 { width: 11.1111111111%; }
+.c-10 { width: 10%; }
+.c-11 { width: 9.09090909091%; }
+.c-12 { width: 8.33%; }
+
+@media (min-width: 800px) and (max-width: 1100px) {
+.c-2, .c-7 { width: 100%; }
+.c-4, .c-8, .c-10, .c-12 { width: 50%; }
+}
+
+@media (max-width: 800px) {
+.c-4, .c-6, .c-8, .c-10, .c-12 { width: 50%; }
+.c-1, .c-2, .c-3, .c-5, .c-7, .c-9, .c-11 { width: 100%; }
+}
+
+@media (max-width: 480px) {
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12 { width: 100%; }
+}
